@@ -1,12 +1,146 @@
-let math101 = Number(prompt("Enter score for math"));
-let eng111 = Number(prompt("Enter score for English"));
-let com111 = Number(prompt("Enter score for Computer Science"));
-let bus111 = Number(prompt("Enter score for Business Administration"));
+let sam = document.getElementById('sam');
+let joe = document.getElementsByClassName('joe')[0];
+let debby = document.getElementById('debby');
+let damian = document.querySelector('#damian');
+let button = document.querySelector('#btn');
 
-let mathUnit = 3;
-let engUnit = 2;
-let comUnit = 3;
-let busUnit = 2;
+button.addEventListener('mouseenter', myMouseEnter);
+button.addEventListener('mouseleave', myMouseLeave);
+
+function myMouseLeave() {
+	sam.style.display = 'none';
+	sam.textContent = 'hello samuel';
+	joe.textContent = 'hello joseph';
+	damian.innerText = 'hello deborah';
+	debby.textContent = 'hello dammy';
+}
+function myMouseEnter() {
+	sam.style.color = 'red';
+	sam.textContent = 'hello sam';
+	joe.textContent = 'hello joe';
+	damian.innerText = 'hello debby';
+	debby.textContent = 'hello damian';
+}
+
+// let movieDB = [
+// 	{
+// 		name: 'Bahubali',
+// 		year: 2015,
+// 		rating: 5,
+// 		hasWatch: true,
+// 	},
+// 	{
+// 		name: 'Acrimony',
+// 		year: 2019,
+// 		rating: 4,
+// 		hasWatch: false,
+// 	},
+// 	{
+// 		name: 'jagu Jagun',
+// 		year: 2023,
+// 		rating: 2.5,
+// 		hasWatch: true,
+// 	},
+// 	{
+// 		name: 'Naruto',
+// 		year: 2005,
+// 		rating: 5,
+// 		hasWatch: false,
+// 	},
+// ];
+
+// for (const movie of movieDB) {
+// 	let result;
+// 	if (movie.hasWatch) {
+// 		result += 'You have watch ' + movie;
+// 	} else {
+// 		result += 'You have not seen ' + movie;
+// 	}
+// 	console.log(result);
+// }
+
+// let nameOfstudent = ['joe', 'damian', 'ola'];
+
+// nameOfstudent[1];
+
+// // .length
+// // pop()
+// // push()
+// // shift()
+// nameOfstudent.shift();
+// // unshift()
+// // map()
+// let numList = [2, 4, 6, 1, 5, 7];
+
+// let mapList = numList.map(function (num) {
+// 	let b = num * 2;
+// 	console.log(b);
+// });
+// filter()
+// for of loop
+
+// function add2(a, b) {
+// 	let c = a + b;
+// 	return c;
+// 	let d = c * 2;
+// }
+
+// let realNumber = 5;
+// let guess = Number(prompt('Enter your guess number'));
+
+// while (guess !== realNumber) {
+// 	guess = Number(prompt('not correct try again'));
+// }
+
+// alert(`You get it right, the number is ${guess}`);
+
+// let a = 1;
+// while (a < 10) {
+// 	console.log(`this is a while loop ${a}`);
+// 	a++;
+// }
+
+// let counter = 1;
+// do {
+// 	console.log(`This is a do while loop ${counter}`);
+// 	counter++;
+// } while (counter < 10);
+
+// let list = ['eli', 'ola', 'joe', 'damian', 'james'];
+
+// let num = 0;
+
+// while (num <= list.length) {
+// 	console.log(list[num]);
+// 	num++;
+// }
+
+// let age = 16;
+
+// switch (true) {
+// 	case age > 17 && age < 91:
+// 		alert('you can drive');
+// 		break;
+// 	case age > 90:
+// 		alert('you are too old to drive');
+// 		break;
+// 	case age <= 17:
+// 		alert('you cannot drive');
+// 		break;
+// 	default:
+// 		alert('not a valid day');
+// 		break;
+// }
+
+// let math101 = Number(prompt("Enter score for math"));
+// let eng111 = Number(prompt("Enter score for English"));
+// let com111 = Number(prompt("Enter score for Computer Science"));
+// let bus111 = Number(prompt("Enter score for Business Administration"));
+
+// let mathUnit = 3;
+// let engUnit = 2;
+// let comUnit = 3;
+// let busUnit = 2;
 
 // if (math101 >= 70 && math101 <= 100) {
 // 	math101 = 5;
@@ -103,7 +237,7 @@ let busUnit = 2;
 // let gradeCheck = (grade, unit) => {
 // 	if (grade >= 70 && grade <= 100) {
 // 		grade = 5;
-// 		grade *= unit;
+// 		grade = grade * unit;
 // 	} else if (grade >= 60 && grade < 70) {
 // 		grade = 4;
 // 		grade *= unit;
@@ -180,11 +314,11 @@ let busUnit = 2;
 
 // let cgpa = "";
 
-if (cgpa > 2.49) {
-	console.log("you have lower");
-} else if (cgpa <= 1.49 && cgpa >= 1) {
-	console.log("you failed");
-}
+// if (cgpa > 2.49) {
+// 	console.log("you have lower");
+// } else if (cgpa <= 1.49 && cgpa >= 1) {
+// 	console.log("you failed");
+// }
 
 //program to check for driving age
 

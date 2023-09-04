@@ -51,3 +51,41 @@
 // };
 
 // game();
+
+// let a = parseInt(prompt('Enter value for a'));
+// let b = parseInt(prompt('Enter value for b'));
+// let c = parseInt(prompt('Enter value for c'));
+
+// function sqrRoot(a, b, c) {
+// 	let bxb = b ** 2 - 4 * a * c;
+// 	return Math.sqrt(bxb);
+// }
+
+// function outCome1() {
+// 	let bxRoot = (-b + sqrRoot(a, b, c)) / (2 * a);
+// 	return bxRoot;
+// }
+
+// function outCome2() {
+// 	let bxRoot = (-b - sqrRoot(a, b, c)) / (2 * a);
+// 	return bxRoot;
+// }
+
+// console.log(outCome1().toFixed(2));
+// console.log(outCome2().toFixed(2));
+
+// function quadEquation(a = 1, b = 2, c = 3) {
+// 	let optionA = (-b + Math.sqrt(Math.pow(b, 2) - 4 * a * c)) / (2 * a);
+// 	let optionB = (-b - Math.sqrt(Math.pow(b, 2) - 4 * a * c)) / (2 * a);
+// 	return `x = ${optionA} or x = ${optionB.toFixed(2)}`;
+// }
+
+// console.log(quadEquation());
+
+let answer = Math.floor(Math.random() * 10) + 1;
+
+let guess = Number(prompt('Guess the number'));
+while (guess !== answer) {
+	guess = Number(prompt(`Try again later`));
+}
+alert(`Congratulations!!! You get it right the answer is ${answer}`);
